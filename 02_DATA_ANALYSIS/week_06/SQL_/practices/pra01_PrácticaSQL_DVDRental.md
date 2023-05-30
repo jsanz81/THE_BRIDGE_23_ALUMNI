@@ -18,6 +18,9 @@ Utilizar aquí la función agregada **SUM()** en la columna de monto de la tabla
 
 5. **¿Cuál es el pago total más alto realizado?**
 
+
+
+
 **6. ¿Cuál es el nombre del cliente que realizó los pagos totales más altos?**
 
 **7. ¿Cuáles son las películas que más se alquilaron?**
@@ -28,7 +31,7 @@ Debemos entender que no es necesario que ya se hayan alquilado todas las pelícu
 
 **9. Qué películas no se han alquilado hasta ahora.**
 
-10. **Qué clientes no han alquilado ninguna película hasta ahora.**
+1.  **Qué clientes no han alquilado ninguna película hasta ahora.**
 
 Un cliente podría haberse registrado como cliente del lugar de alquiler de DVD, pero aún no ha comenzado a alquilar DVD.
 
