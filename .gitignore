@@ -366,8 +366,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
-/week01/practices/99_solutions
-/week01/practices/otras_pracs
+#/week01/practices/99_solutions
+#/week01/practices/otras_pracs
 
 
 # Operating System files
