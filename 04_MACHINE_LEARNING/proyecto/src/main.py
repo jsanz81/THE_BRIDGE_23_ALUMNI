@@ -34,10 +34,11 @@ logger = logging.getLogger("main.py")
 logger.setLevel("INFO")
 
 def main():
-    db = f.TheBridgeDatabase(env=environment)
-    db.create_database_sqlite()
-    tables = db.read_table(table_name=db_table_name)
-    print(tables)
+    for df in df_list:
+        df['Weight_new'] = df['Weight'].apply(f.remove_kg)
+        print(df['Weight'])
+    
+    
 
 if __name__ == '__main__':
     logger.info("--- Script start ---")

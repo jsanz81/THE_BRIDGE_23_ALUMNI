@@ -119,6 +119,59 @@ class TheBridgeDatabase():
                             """, self.conn)
         return self.tables
 
+
+# class DataFrameTransform():
+    
+#     def __init__(self):
+#         pass
+    
+def remove_kg(row, custom_attr):
+    row = row.lower()
+    if 'kg' in row:
+        return float(row.split('kg')[0])
+    else:
+        return float(row)
+    
+def remove_kg(row, custom_attr):
+    row = row.lower()
+    if 'kg' in row:
+        return float(row.split('kg')[0])
+    else:
+        return float(row)
+    
+def remove_kg(row, custom_attr):
+    row = row.lower()
+    if 'kg' in row:
+        return float(row.split('kg')[0])
+    else:
+        return float(row)
+    
+def remove_kg(row, custom_attr):
+    row = row.lower()
+    if 'kg' in row:
+        return float(row.split('kg')[0])
+    else:
+        return float(row)
+    
+def remove_ids(df, ids=None):
+    
+    global train_ids, test_ids
+    
+    # Guardamos las IDs de train y test
+    train_ids = df_list[0].id.to_list()
+    test_ids = df_list[1].id.to_list()
+    
+    ids = list()
+    
+    # Eliminamos la Ids
+    for df in df_list:
+        df.drop('id', axis=1, inplace=True)
+    
+    # Eliminamos la variable laptop_ID
+    for df in df_list:
+        df.drop('laptop_ID', axis=1, inplace=True)
+    
+    return df
     
     
 
